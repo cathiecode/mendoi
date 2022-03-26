@@ -12,8 +12,15 @@ render(
   html`
     <div>
       <h1>Mendoi</h1>
-      ${apps.map(app => html`
-        <section>
+      <nav>
+        ${apps.map((app, i) => html`
+          <ul>
+            <li><a href="#${i}">${app.title}</a></li>
+          </ul>
+        `)}
+      </nav>
+      ${apps.map((app, i) => html`
+        <section id="${i}">
           <h2>${app.title}</h2>
           <${ErrorBoundary}>
             <${app.app} />
