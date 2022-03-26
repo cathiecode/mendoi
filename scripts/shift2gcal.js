@@ -59,12 +59,12 @@ export default {
         <button type="submit">変換</button>
       </form>
       <p>
-        ${inputParsed.map(e => html`<span class="jst__shift2gcal__preview">${e}</span>`)}
+        ${inputParsed.map(e => html`<span class="mendoi__shift2gcal__preview">${e}</span>`)}
         <span>(${inputParsed.length}回)</span>
       </p>
       ${result && html`<textarea readonly value=${result} /><button onClick=${handleSave}>Save</button>`}
       <style>
-        .jst__shift2gcal__preview {
+        .mendoi__shift2gcal__preview {
           margin: 0 0.2em;
           padding: 0 0.2em;
           border: solid 1px #393;

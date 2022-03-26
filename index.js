@@ -11,7 +11,7 @@ const apps = [
 render(
   html`
     <div>
-      <h1>JSTools</h1>
+      <h1>Mendoi</h1>
       ${apps.map(app => html`
         <section>
           <h2>${app.title}</h2>
